@@ -39,4 +39,10 @@ q5.update = function () {
 	if (kb.pressing('d')) ball.vel.x = 5
 	if (kb.pressing('a')) ball.vel.x = -5
 	if (kb.pressing('m')) ball.scale = min(ball.scale + 0.01, 2);
+	if (kb.presses('s')){
+		ball.y = 0
+		ball.x = 0
+		ball.vel.y = 0
+		ball.vel.x = 0
+	}
 };
